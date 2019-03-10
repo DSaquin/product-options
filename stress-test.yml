@@ -1,13 +1,13 @@
 config:
   target: 'http://localhost:3001'
   phases:
-    - duration: 1
-      arrivalRate: 1
+    - duration: 300
+      arrivalRate: 300
 
 scenarios:
   - flow:
-      # - get:
-      #     url: '/products/10000000'
+      - get:
+          url: '/products/5'
       - post:
           url: '/products/'
           json:
