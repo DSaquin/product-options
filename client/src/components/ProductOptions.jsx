@@ -40,7 +40,9 @@ class ProductOptions extends React.Component {
   }
   // will need to create get request for below product's 3 varieants - variants/:itemId
   getRandomProduct() {
-    axios.get('http://localhost:3001/products/random').then(response => {
+    const max = 5000000;
+    let itemId = Math.floor(Math.random() * Math.floor(max));
+    axios.get(`http://localhost:3001/products/${itemId}`).then(response => {
       // const randomIndex = Math.floor(Math.random() * response.data.length);
       const randomProduct = response.data[0];
       // console.log(randomProduct);

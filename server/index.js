@@ -18,17 +18,17 @@ app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/../public'));
 
-app.get('/products/random', (req, res) => {
-  const randomProductId = Math.floor(Math.random() * 10000000);
-  getProduct(randomProductId)
-    .then(product => {
-      console.log('retrieved the random product');
-      res.status(200).send(product);
-    })
-    .catch(err => {
-      res.status(500).send(err);
-    });
-});
+// app.get('/products/random', (req, res) => {
+//   const randomProductId = Math.floor(Math.random() * 10000000);
+//   getProduct(randomProductId)
+//     .then(product => {
+//       console.log('retrieved the random product');
+//       res.status(200).send(product);
+//     })
+//     .catch(err => {
+//       res.status(500).send(err);
+//     });
+// });
 
 app.get('/products/:itemId', function gettingProducts(req, res) {
   getProduct(req.params.itemId)
@@ -61,7 +61,6 @@ app.post('/products/', function postingProduct(req, res) {
 app.put('/products/:itemId', (req, res) => {
   const updatedItem = req.body;
   const itemId = req.params.itemId;
-  console.log('before..00000');
   console.log(updatedItem);
   updateProduct(itemId, updatedItem).then(() => {
     console.log('product updated!');
