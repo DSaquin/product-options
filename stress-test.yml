@@ -1,0 +1,19 @@
+config:
+  target: 'http://localhost:3001'
+  phases:
+    - duration: 300
+      arrivalRate: 300
+
+scenarios:
+  - flow:
+      - get:
+          url: '/products/5'
+      - post:
+          url: '/products/'
+          json:
+            brand: 'brand'
+            title: 'title'
+            averageRating: 23
+            reviewCount: 23
+            freeShipping: 'true'
+            shippingRestriction: 'false'
