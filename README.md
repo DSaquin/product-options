@@ -1,4 +1,4 @@
-# Outdoor Recreational Equpment Product Options module
+# Product Options module for outdoor recreational equipment
 
 A Product Options service that has each products (10 million) details and variaions (30 million+).
 
