@@ -4,8 +4,8 @@ A Product Options service that has each products (10 million) details and variai
 
 ## Related Projects
 
-  - https://github.com/hrr36-fec4/fec4-reviews
-  - https://github.com/hrr36-fec4/fec4-related-items-and-size-chart
+  - https://github.com/bearei/fec4-reviews
+  - https://github.com/bearei/fec4-related-items-and-size-chart
 
 ## Table of Contents
 
