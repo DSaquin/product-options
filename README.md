@@ -1,6 +1,6 @@
-# HRR36 FEC Team 4 - Product Options
+# Outdoor Recreational Equpment Product Options module
 
-This repo includes the Product Options service of Team 4's Front End Capstone project.
+A Product Options service that has each products (10 million) details and variaions (30 million+).
 
 ## Related Projects
 
